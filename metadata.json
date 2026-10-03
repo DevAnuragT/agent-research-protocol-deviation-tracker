@@ -1,0 +1,29 @@
+{
+  "slug": "research-protocol-deviation-tracker",
+  "title": "Research Protocol Deviation Tracker",
+  "category": "research",
+  "description": "Check deviation records for protocol version, impact assessment, and review owner.",
+  "fields": {
+    "study_id": {
+      "label": "study id",
+      "kind": "required",
+      "minimum": 0
+    },
+    "protocol_version": {
+      "label": "protocol version",
+      "kind": "required",
+      "minimum": 0
+    },
+    "deviation_description": {
+      "label": "deviation description",
+      "kind": "text",
+      "minimum": 30
+    },
+    "impact_review": {
+      "label": "impact review",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: research-protocol-deviation-tracker
+version: 0.1.0
+description: Check deviation records for protocol version, impact assessment, and review owner.
+skills:
+  - research-protocol-deviation-tracker-skill
+tools:
+  - review-research-protocol-deviation-tracker
+tags:
+  - research
+  - evidence-driven

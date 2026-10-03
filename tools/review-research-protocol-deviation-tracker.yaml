@@ -1,0 +1,59 @@
+{
+  "name": "review-research-protocol-deviation-tracker",
+  "description": "Run Research Protocol Deviation Tracker",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "study_id": {
+            "type": "string",
+            "description": "study id"
+          },
+          "protocol_version": {
+            "type": "string",
+            "description": "protocol version"
+          },
+          "deviation_description": {
+            "type": "string",
+            "description": "deviation description"
+          },
+          "impact_review": {
+            "type": "string",
+            "description": "impact review"
+          }
+        },
+        "required": [
+          "study_id",
+          "protocol_version",
+          "deviation_description",
+          "impact_review"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-research-protocol-deviation-tracker.py",
+    "runtime": "python3"
+  }
+}
